@@ -1,0 +1,54 @@
+//
+//  Usual.pch
+//  Prometheus
+//
+//  Created by Mr.C on 16/5/6.
+//  Copyright © 2016年 Mr.C. All rights reserved.
+//
+
+//#ifndef Usual_pch
+//#define Usual_pch
+//
+//// Include any system framework and library headers here that should be included in all compilation units.
+//// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//
+//#endif /* Usual_pch */
+
+/***
+ PCH文件:
+ 作用:1.存放一些共用的宏
+ 2.存放一些公用的头文件.
+ 3.自定义Log.
+ 原理:在编译时,会把PCH文件当中所有的内容给导入到工程的每一个文件当中.
+ 注意:使用PCH文件时,要做一个判断,因为工程当中有可能出现C语言的文件.不能导入OC的东西.
+ 每一个OC文件内部都隐式定义了一__OBJC__宏
+ */
+
+#ifdef __OBJC__
+// 屏幕宽高
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
+
+//根据RGB生成颜色
+#define ZWColor(r,g,b,a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
+
+#define navH 64
+#define tabBarH 49
+#define tableVInset 35
+
+
+#ifdef DEBUG
+
+#define IULog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define IULog(...)
+
+#endif
+
+//共有头文件
+#import "UIView+Frame.h"
+#import "UIImage+image.h"
+
+#endif
