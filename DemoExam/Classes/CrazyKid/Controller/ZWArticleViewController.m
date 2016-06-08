@@ -85,6 +85,7 @@
     _topImageV.image = [UIImage imageNamed:@"Klaus"];
     [titleView addSubview:_topImageV];
     self.navigationItem.titleView = titleView;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 // 设置选项条
@@ -133,6 +134,7 @@
     UITableView *leftTableV = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screenW, self.bottomScrollV.height) style:UITableViewStylePlain];
 //    UITableView *tableV = [[UITableView alloc]initWithFrame:CGRectMake(screenW, 0, screenW, screenH - navH - tabBarH) style:UITableViewStylePlain];
     leftTableV.backgroundColor = [UIColor purpleColor];
+    
     //设置没有分隔线
 //    leftTableV.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 隐藏tableV垂直拉条
@@ -190,7 +192,7 @@
 //- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView  // 减速完毕调用
 //- (void)scrollViewDidScroll:(UIScrollView *)scrollView  // 正在滚动时调用
 //- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate // 停止滚动时调用
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if (scrollView == self.bottomScrollV) {
         // 根据scrollView偏移的位置(页面)计算页数
         int pageIndex = (int)(self.bottomScrollV.contentOffset.x / screenW + 0.5);

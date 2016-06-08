@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA9831BF3C930993A6B51E60EC1E8D67FE593C24",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA9831BF3C930993A6B51E60EC1E8D67FE593C24" : 0,
+    "B5AB0473D5563A666578F4763ECB5DC460C01049" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7B1DA2F4-6CD0-415F-AD48-EEB3D3145424",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA9831BF3C930993A6B51E60EC1E8D67FE593C24" : "Jianshu-simulate\/",
+    "B5AB0473D5563A666578F4763ECB5DC460C01049" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DemoExam",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DemoExam.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:WCCSC\/cocgit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5AB0473D5563A666578F4763ECB5DC460C01049"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IU-CC\/Jianshu-simulate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA9831BF3C930993A6B51E60EC1E8D67FE593C24"
+    }
+  ]
+}

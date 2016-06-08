@@ -148,7 +148,7 @@
 //    }];
 //}
 - (void)bottomLineScollIndex:(NSInteger)index {
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:0.20 animations:^{
 //            NSLog(@"-----%ld", index);
 //            self.bottomLine.x = index * self.btnW;
             // 算了好久
@@ -177,8 +177,9 @@
     }
 //    self.bottomLine.frame = CGRectMake(0, self.height - 2, self.btnW * 0.5, 2);
     // 算了好久
-    self.bottomLine.center = CGPointMake(self.btnW * 0.5, self.height - 2);
-    self.bottomLine.bounds = CGRectMake(0, 0, self.btnW * 0.5, 2);
+//    self.bottomLine.center = CGPointMake(self.btnW * 0.5, self.height - 2);
+    self.bottomLine.centerY = self.height - 2;
+    self.bottomLine.size = CGSizeMake(self.btnW * 0.5, 2.0);
 }
 
 
